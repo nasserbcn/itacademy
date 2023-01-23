@@ -82,3 +82,10 @@
             background: #eaaf2e;
             
         }
+
+@media all and (max-width:800px) {
+    .section {
+        flex-direction: column;
+        background: yellow;
+    }
+}
