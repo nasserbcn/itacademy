@@ -1,0 +1,224 @@
+*{
+    margin:0px;
+    padding:10px;
+    box-sizing: border-box;
+   
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+body {
+
+ font-family: 'Montserrat', sans-serif;
+}  
+
+.padre {
+ display: flex;
+ flex-flow: column nowrap;
+ background: url(images/header.jpg);
+ background-position: center;
+ background-attachment: contain;
+ max-width: 1200px;
+ height: auto;
+ margin: auto;
+ /*background-size: cover;*/
+}
+
+    .header {
+        /*background: url(images/header.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;*/
+        display: flex;
+        flex-flow: column nowrap;
+       
+    }
+        .menu{
+            background: rgba(0,0,0,0);
+            display:flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+        }
+            .logo{
+              
+               padding-left: 0px;
+               flex: 1 auto;
+               padding: 0;
+               margin: 0;
+               
+            }
+            .nav{
+                flex: 7 1 auto;
+                justify-content: space-around;
+                flex-direction: row;
+                display: flex;
+
+            }
+
+                .nav a {
+                   color: #555;
+                   font-size: 12;
+                   padding: 0 10px;
+                   letter-spacing: 0px;
+
+                }
+
+                .nav a:hover {
+                    color:#AAA;
+                }
+
+            .social {
+                flex: 1 1 auto;
+                display: flex;
+            }
+
+                .social a {
+                    font-size: 18px;
+                    color: #555;
+                    padding: 0 0px;
+                }
+
+                .social a:hover {
+                    color:#AAA;
+                }
+
+        .texto-principal_old {
+            background: #f07b3f;
+        }
+            h1_old {
+                background: #ffd460;
+            }
+
+            .texto-principal {
+                background: rgba(0,0,0,0.1);
+                margin-top: 200px;
+                height: 135px;
+                margin-bottom: -20px;
+                margin-left: 40px;
+                margin-right: 40px;
+               
+            }
+                h1 {
+                    display: flex;
+                    text-align: center;
+                    color:rgba(245, 156, 123, 0.75);
+                    justify-content:space-around; 
+                }
+
+
+    .section {
+        background: #000;
+        /*display: flex;*/
+        display: none;
+    }
+
+        .articulos {
+            background: #4e4e6a;
+            flex:2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+            .article {
+                background: #1f6cb0;
+                flex: 1 1 40%;
+            }
+            .navegacion {
+                background: #70a3c4;
+                flex: 1 1 100%;
+            }
+
+        .aside {
+            background: #f73f52;
+            flex: 1 1 auto;
+        }    
+            .publicidad {
+                background: #ffea85;
+            }
+
+    .footer {
+        background: #000;
+        display:none;
+    }
+        .pie {
+            background: #eaaf2e;
+            
+        }
+
+@media all and (max-width:800px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .social {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+}
+
+@media all and (max-width:620px) {
+    
+    .texto-principal {
+        background: rgba(0,0,0,0.1);
+        margin-top: 200px;
+        height: 135px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+       
+    }
+        h1 {
+            display: flex;
+            font-size: 24px;
+            text-align: center;
+            color:rgba(245, 156, 123, 0.75);
+            justify-content:space-around; 
+        }
+
+
+    
+    .menu {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    
+    .social {
+        flex-direction: row;
+        height: auto;
+        margin-bottom:60px;
+    }
+
+    .nav {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+
+    .aside {
+        background: #DE805D;
+        flex-direction: column;
+    }  
+
+    .articulos {
+        flex-direction: column;
+        background: #304D6D;
+    }  
+
+    .article {
+        background: #75949B;
+    }
+
+    .navegacion {
+        background: #B7DDCB;
+    }
+
+    .publicidad {
+        background: #E8B774;
+    }
+    .section {
+        background: #F3E84C;
+    }
+}
