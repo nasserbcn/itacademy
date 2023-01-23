@@ -89,3 +89,45 @@
         background: yellow;
     }
 }
+
+@media all and (max-width:420px) {
+    .menu {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+
+    .logo{
+       width: 90%; height: 20px;
+    }
+    .nav{
+        width: 90%; height: 20px;
+    } 
+    .social{
+        width: 90%; height: 20px;
+    }
+
+    .aside {
+        background: #DE805D;
+        flex-direction: column;
+    }  
+
+    .articulos {
+        flex-direction: column;
+        background: #304D6D;
+    }  
+
+    .article {
+        background: #75949B;
+    }
+
+    .navegacion {
+        background: #B7DDCB;
+    }
+
+    .publicidad {
+        background: #E8B774;
+    }
+    .section {
+        background: #F3E84C;
+    }
+}
